@@ -1,7 +1,9 @@
 #include<stdio.h>
+
 int Factorial(int iNo)
 {
     static int iFact=1;
+
     if(iNo!=0)
     {
         iFact = iFact*iNo;
@@ -17,7 +19,7 @@ int main()
     printf("Enter number:");
     scanf("%d",&Value);
      iret = Factorial(Value);
-     
+
     printf("Factorial of number is: %d\n",iret);
 
     return 0;
