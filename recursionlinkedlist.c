@@ -37,7 +37,7 @@ void Display(PNODE head)
     {
         printf("| %d |-> ",head->data);
         head = head -> next;
-        Display(head);
+        Display(head);  
     }
 }
 
