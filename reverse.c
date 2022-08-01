@@ -1,16 +1,26 @@
 #include<stdio.h>
+#include<string.h>
+
+
+void reverse(char *ptr)
+{
+    int length = strlen(ptr);
+    int temp=0;
+    for(int i=0;i<length/2;i++)
+    {
+       temp = ptr[i];
+       ptr[i]= ptr[length-1-i];
+       ptr[length-1-i]= temp; 
+    }
+}
 int main()
 {
-    int n=0,rev=0,r=0;
-    printf("Enter a number:");
-    scanf("%d",&n);
-    while(n!=0){
-    r= n%10;
-    n= n/10;
-    rev = rev*10+r;
+    char Arr[30];
+    printf("Enter String:\n");
 
-    }
-    printf("reverse of digit in n: %d\n",rev);
+    scanf("%[^\n]s",Arr);
 
-    return 0;
+    reverse(Arr);
+
+    printf("%s",Arr);   
 }

@@ -1,4 +1,4 @@
-#include<stdio.h>
+3#include<stdio.h>
 #include<stdlib.h>
 struct Node // Structre Defination
 {
