@@ -17,7 +17,7 @@ void Insert(PPNODE Head, int iNo)
     newn->rchild = NULL;
 
     if(*Head == NULL)   // BST empty
-    {
+    {	
         *Head = newn;
     }
     else
